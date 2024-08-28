@@ -1,12 +1,12 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { Image } from 'astro:assets';
-import univerlogo from '../../public/universitas-indonesia-logo.png';
+import { Image, getImage } from 'astro:assets';
+// getImage()
 ---
 
 <header>
 	<nav>
-		<Image src={univerlogo} alt="logo universitas" width="50" height="50" />
+		<Image src="/public/logo-kecil.png" alt="logo universitas" width="200" height="100" />
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
