@@ -3,7 +3,7 @@ import Layout from '../layouts/BlogPost.astro';
 ---
 
 <Layout
-	title="About Simak Universitas Indonesia"
+	title="About | Simak Universitas Indonesia"
 	description="Everything about Vokasi Universitas Indonesia "
 	pubDate={new Date('August 28 2024')}
 	heroImage="/kampus-ui.jpg"
@@ -40,4 +40,10 @@ import Layout from '../layouts/BlogPost.astro';
 		border: 1px black solid;
 		padding: 10px;
 	}
+@media (max-width: 768px) {
+    h1 {
+		font-size: xx-large;
+	}
+}
+
 </style>
