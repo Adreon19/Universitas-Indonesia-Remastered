@@ -6,11 +6,25 @@ import { Image, getImage } from 'astro:assets';
 
 <header>
 	<nav>
-		<Image src="/public/logo-kecil.png" alt="logo universitas" width="200" height="100" />
+		<div class="image-nav">
+			<a href="/">
+				<Image src="/public/logo-kecil.png" alt="logo universitas" width="200" height="100"  />
+			</a>
+		</div>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/about">Tentang Simak</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/pendaftaran">Pendaftaran</HeaderLink>
+			<HeaderLink href="/pendaftaran">Biaya Pendidikan</HeaderLink>
+			<div class="more-dropdown">
+				<HeaderLink href="#">More</HeaderLink>
+				<div class="dropdown-menu">
+					<HeaderLink href="/services">Services</HeaderLink>
+					<HeaderLink href="/contact">Contact</HeaderLink>
+					<HeaderLink href="/faq">FAQ</HeaderLink>
+				</div>
+			</div>
 		</div>
 		<div class="social-links">
 			<a href="https://twitter.com/SIMAK_UI" target="_blank">
@@ -35,6 +49,12 @@ import { Image, getImage } from 'astro:assets';
 	</nav>
 </header>
 <style>
+	.image-nav {
+		margin: 5px;
+	}
+	.image-nav a {
+		padding: 0;
+	}
 	header {
 		margin: 0;
 		padding: 0 1em;
@@ -60,16 +80,63 @@ import { Image, getImage } from 'astro:assets';
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		transition: 0.5s;
 	}
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
+	.internal-links {
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+		position: relative;
+	}
+	.internal-links a {
+		background: linear-gradient(#ffffff, #ffffff 50%, yellow);
+  background-size: 100% 200%;
+  /*trasition effect for background*/
+  transition: background 1s;
+  font-size: large;
+	}
+	.internal-links a:hover {
+  background-position: 100% 100%;
+}
 	.social-links,
 	.social-links a {
 		display: flex;
 	}
+	.more-dropdown {
+		position: relative;
+	}
+	.dropdown-menu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: white;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		z-index: 10;
+	}
+	.more-dropdown:hover .dropdown-menu {
+		display: flex;
+		flex-direction: row;
+	}
+	.dropdown-menu a {
+		padding: 1em;
+		border-bottom: none;
+		background: white;
+	}
+	.dropdown-menu a:hover {
+		background-color: yellow;
+	}
 	@media (max-width: 720px) {
+		.image-nav {
+			display: none;
+		}
+		nav a {
+			font-size: 15px;
+		}
 		.social-links {
 			display: none;
 		}
