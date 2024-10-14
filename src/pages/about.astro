@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import Expandable from '../components/About/Expandable.vue';
 ---
 
 <Layout
-	title="Tentang Simak Universitas Indonesia"
-	description="Semau tentang Simak Universitas Indonesia "
-	pubDate={new Date('August 28 2024')}
-	heroImage="/kampus-ui.jpg"
+title="Tentang Simak Universitas Indonesia"
+description="Semau tentang Simak Universitas Indonesia "
+pubDate={new Date('August 28 2024')}
 >
+<img src="../../public/kampus-ui.jpg" alt="kampus ui">
 	<p>
 		Simak-UI (Seleksi Masuk UI) adalah ujian seleksi terpadu masuk UI yang diselenggarakan UI bagi calon mahasiswa yang ingin kuliah di UI. Program pendidikan yang dibuka pada SIMAK UI mulai dari Program Vokasi (D3 dan D4), Sarjana, Sarjana Kelas Internasional, Sarjana dengan Rekognisi Pembelajaran Lampau (RPL), Profesi, Spesialis, Magister dan Doktor.
 	</p>
@@ -16,24 +17,14 @@ import Layout from '../layouts/BlogPost.astro';
 		Bagi siswa/i yang berasal dari SMA (Sekolah Menengah Atas) atau sederajat yang sudah memiliki ijazah Paket C atau mendapatkan sertifikasi A Level, IB Diploma atau sudah mendapatkan surat penyetaraan dari Departemen Pendidikan Nasional (bagi lulusan luar negeri) dapat mengikuti SIMAK UI tanpa harus mengikuti UN (Ujian Nasional).
 	</p>
 
-	<p>
-		Ikuti panduan pendaftaran yang tertera di web <a href="https://penerimaan.ui.ac.id" target="_blank">https://penerimaan.ui.ac.id</a>
-	</p>
-
-	<h1>Apa itu Simak UI?</h1>
-	<p>SIMAK UI adalah seleksi masuk UI terpadu untuk berbagai jenjang dan program pendidikan yang ada di UI. Mahasiswa yang diterima melalui jalur SIMAK UI membayar biaya pendidikan sesuai dengan program pendidikan berdasar SK Rektor terkait biaya pendidikan.</p>
-
-	<p>
-		0
-	</p>
+	<Expandable client:load/>
 </Layout>
 <style>
 	a {
-		color: blue;
+		color: blueviolet;
 		text-decoration: none
 	}
 	a:hover {
-		color: black;
 		text-decoration: underline;
 	}
 	.prestasi-siswa {
