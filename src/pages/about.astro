@@ -1,13 +1,18 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 import Expandable from '../components/About/Expandable.vue';
+
+const title = "Tentang Simak Universitas Indonesia"
 ---
 
 <Layout
-title="Tentang Simak Universitas Indonesia"
-description="Semau tentang Simak Universitas Indonesia "
+title={title}
+description="Semua tentang Simak Universitas Indonesia "
 pubDate={new Date('August 28 2024')}
 >
+	<h3>
+		{title}
+	</h3>
 <img src="../../public/kampus-ui.jpg" alt="kampus ui">
 	<p>
 		Simak-UI (Seleksi Masuk UI) adalah ujian seleksi terpadu masuk UI yang diselenggarakan UI bagi calon mahasiswa yang ingin kuliah di UI. Program pendidikan yang dibuka pada SIMAK UI mulai dari Program Vokasi (D3 dan D4), Sarjana, Sarjana Kelas Internasional, Sarjana dengan Rekognisi Pembelajaran Lampau (RPL), Profesi, Spesialis, Magister dan Doktor.
