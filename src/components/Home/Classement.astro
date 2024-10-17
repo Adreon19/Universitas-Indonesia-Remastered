@@ -1,0 +1,91 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+<div class="card-container">
+    <div class="classement-card">
+        <h2>
+            <Icon name="mdi:books" />
+        </h2>
+        <p>Panduan</p>
+        <p>Kurikulum</p>
+        <a href="">Klik disini</a>
+    </div>
+    <div class="classement-card">
+        <h2>
+            <Icon name="mdi:monitor" />
+        </h2>
+        <p>Pendaftaran</p>
+        <p>Daftar menjadi calon mahasiswa</p>
+        <a href="">Klik disini</a>
+    </div>
+    <div class="classement-card">
+        <h2>
+            <Icon name="mdi:money" />
+        </h2>
+        <p>Biaya</p>
+        <p>Pendidikan</p>
+        <a href="">Klik disini</a>
+    </div>
+    <div class="classement-card">
+        <h2>
+            <Icon name="mdi:download" />
+        </h2>
+        <p>Download</p>
+        <p>Soal-soal SIMAK</p>
+        <a href="">Klik disini</a>
+    </div>
+    <div class="classement-card">
+        <h2>
+            <Icon name="mdi:map" />
+        </h2>
+        <p>Peta</p>
+        <p>Kampus</p>
+        <a href="">Klik disini</a>
+    </div>
+</div>
+
+<style>
+    .card-container {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+        padding: 50px;
+    }
+
+    .classement-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center;
+        border: 1px solid rgba(116, 114, 114, 0.461);
+        border-radius: 15px; /* Slightly smaller border radius */
+        width: 150px; /* Reduced width to fit more cards */
+        padding: 15px; /* Reduced padding */
+        background-color: #f0f0f0;
+        text-align: center;
+        margin: 5px; /* Space between cards */
+    }
+
+    .classement-card h2, .classement-card p {
+        margin: 5px 0; /* Reduced spacing */
+        word-wrap: break-word; /* Ensure text wraps inside the container */
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        background-color: blue;
+        padding: 6px; /* Smaller padding */
+        border-radius: 8px;
+        margin-top: 5px; /* Reduced margin */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .classement-card:hover {
+        transform: scale(1.10);
+    }
+</style>
