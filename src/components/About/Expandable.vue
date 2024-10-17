@@ -7,14 +7,10 @@
       </button>
       <div v-if="isVisible[0]" class="faq-content">
         <p>
-          Simak-UI (Seleksi Masuk UI) adalah ujian seleksi terpadu masuk UI yang
-          diselenggarakan UI bagi calon mahasiswa yang ingin kuliah di UI.
-        </p>
-        <p>
-          Program pendidikan yang dibuka pada SIMAK UI mulai dari Program Vokasi
-          (D3 dan D4), Sarjana, Sarjana Kelas Internasional, Sarjana dengan
-          Rekognisi Pembelajaran Lampau (RPL), Profesi, Spesialis, Magister dan
-          Doktor.
+          SIMAK UI adalah seleksi masuk UI terpadu untuk berbagai jenjang dan
+          program pendidikan yang ada di UI. Mahasiswa yang diterima melalui
+          jalur SIMAK UI membayar biaya pendidikan sesuai dengan program
+          pendidikan berdasar SK Rektor terkait biaya pendidikan.
         </p>
       </div>
     </div>
