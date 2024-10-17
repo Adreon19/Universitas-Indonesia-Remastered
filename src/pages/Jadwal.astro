@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import TableJadwal from '../components/Jadwal/TableJadwal.astro';
+---
+
+<Layout
+    title="Jadwal Penerimaan Mahasiswa Baru UI 2024"
+    description="Semua tentang Simak Universitas Indonesia"
+    pubDate={new Date('August 28 2024')}
+>
+    <main>
+        <div class="title">
+            <h4>
+                Jadwal Penerimaan Mahasiswa Baru UI 2024
+            </h4>
+            <img src="/public/logo-ui.png" alt="logo ui" class="logo">
+        </div>
+        <div class="sanggahan">
+            <p>
+                Sanggahan : <br>
+                *Jika ada perbedaan tanggal dengan website <a href="https://snpmb.bppp.kemdikbud.go.id/">SNPMB</a>, maka yang berlaku adalah yang tertera di website SNPMB. <br>
+                *Jika ada perbedaan tanggal dengan website <a href="http://penerimaan.ui.ac.id/">penerimaan</a>, maka yang berlaku adalah yang tertera di website penerimaan.
+            </p>
+            <p>*Pendaftaran SIMAK UI <a href="https://penerimaan.ui.ac.id/page/registration">di sini</a>.</p>
+        </div>
+    </main>
+    <TableJadwal />
+</Layout>
+
+<style>
+    main {
+        width: calc(100% - 2em);
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+      .sanggahan p {
+        font-size: medium;
+    }
+
+    a {
+        color: blueviolet;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        h4 {
+            font-size: xx-large;
+        }
+    }
+</style>
