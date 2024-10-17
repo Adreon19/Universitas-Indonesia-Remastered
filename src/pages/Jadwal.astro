@@ -1,17 +1,19 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 import TableJadwal from '../components/Jadwal/TableJadwal.astro';
+
+const title = "Jadwal Penerimaan Mahasiswa Baru UI 2024"; 
 ---
 
 <Layout
-    title="Jadwal Penerimaan Mahasiswa Baru UI 2024"
+    title={title}
     description="Semua tentang Simak Universitas Indonesia"
     pubDate={new Date('August 28 2024')}
 >
     <main>
         <div class="title">
             <h4>
-                Jadwal Penerimaan Mahasiswa Baru UI 2024
+                {title}
             </h4>
             <img src="/public/logo-ui.png" alt="logo ui" class="logo">
         </div>
