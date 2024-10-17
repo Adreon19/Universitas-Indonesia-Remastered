@@ -2,6 +2,6 @@
 declare module "@splidejs/vue-splide" {
   import { DefineComponent } from "vue";
 
-  export const Splide: DefineComponent;
-  export const SplideSlide: DefineComponent;
+  export const Splide: DefineComponent<{}, {}, any>;
+  export const SplideSlide: DefineComponent<{}, {}, any>;
 }
