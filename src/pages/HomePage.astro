@@ -3,6 +3,8 @@ import Slideshow from "../components/Home/Slideshow.vue"
 import Info from "../components/Home/Info.astro"
 import Pengumuman from "../components/Home/Pengumuman.astro"
 import Video from "../components/Home/Video.astro"
+import Classement from "../components/Home/Classement.astro"
+import Rumpun from "../components/Home/Rumpun.astro"
 ---
 
 <html lang="en">
@@ -14,10 +16,11 @@ import Video from "../components/Home/Video.astro"
     <body>
         <main>
                 <Slideshow client:only="vue" />
-                <Info client:load />
-                <Pengumuman client:load />
-                <Video client:load/>
-                <p>kira kira disini enaknya isi apa ya</p>
+                <Info />
+                <Pengumuman />
+                <Classement />
+                <Rumpun />
+                <Video />
         </main>
     </body>
     <style>
