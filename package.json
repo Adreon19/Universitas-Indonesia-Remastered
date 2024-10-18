@@ -15,8 +15,12 @@
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/vue": "^4.5.2",
     "@iconify-json/mdi": "^1.2.1",
+    "@popperjs/core": "^2.11.8",
     "@splidejs/vue-splide": "^0.6.12",
+    "@types/bootstrap": "^5.2.10",
     "astro": "^4.14.5",
+    "astro-bootstrap": "^0.7.0",
+    "bootstrap": "^5.3.3",
     "vue": "^3.5.12"
   },
   "devDependencies": {
